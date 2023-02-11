@@ -92,7 +92,7 @@ export const MediaContainer = styled.div`
     }
 
 @media (max-width: 768px){
-        left: 20px;
+        left: 5px;
     .btnPlus{
         width: 40px;
         height: 40px;

@@ -23,6 +23,8 @@ export const AboutMeContainer = styled.div`
     background: #0B0C10;
     width: 100%;
     height: 100vh;
+    display: grid;
+    place-items: center;
 
     .containerImgandText{
     width: 70%;

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
 import Logo from '../../assets/Logo.svg';
-import {FaBars} from 'react-icons/fa';
+import {FaBars, FaTimes} from 'react-icons/fa';
 
 
 
@@ -13,26 +13,26 @@ const Header = () => {
       <Wrapper>
         <LogoContainer src={Logo} alt="logo"/>
         <Burger onClick={() => setShowBurgerMenu(!showBurgerMenu)}>
-          <FaBars/>
+          {showBurgerMenu ? <FaTimes/> : <FaBars/>}
         </Burger>
         <Menu open={showBurgerMenu}>
           <MenuItem>
-            <MenuItemLink>
+            <MenuItemLink href="/home"onClick={() => setShowBurgerMenu(!showBurgerMenu)}>
               HOME
             </MenuItemLink>
           </MenuItem>
           <MenuItem>
-            <MenuItemLink>
+            <MenuItemLink href="/proyectos" onClick={() => setShowBurgerMenu(!showBurgerMenu)}>
               PROYECTOS
             </MenuItemLink>
           </MenuItem>
           <MenuItem>
-            <MenuItemLink>
+            <MenuItemLink href="/sobremi" onClick={() => setShowBurgerMenu(!showBurgerMenu)}>
               SOBRE MI
             </MenuItemLink>
           </MenuItem>
           <MenuItem>
-            <MenuItemLink>
+            <MenuItemLink href="/contacto" onClick={() => setShowBurgerMenu(!showBurgerMenu)}>
               CONTACTO
             </MenuItemLink>
           </MenuItem>
@@ -45,6 +45,7 @@ const Header = () => {
 export default Header
 
 export const ContainerHeader = styled.div`
+  position: fixed;
   width: 100%;
   height: 70px;
   background-color: #0B0C10;
@@ -72,7 +73,7 @@ export const Menu = styled.ul`
   justify-content: space-between;
   list-style: none;
 
-  @media(max-width: 960px){
+  @media(max-width: 768px){
     background-color: #0B0C10;
     position: absolute;
     top: 70px;
@@ -88,8 +89,7 @@ export const Menu = styled.ul`
 
 export const MenuItem = styled.li`
   height: 100%;
-
-  @media(max-width: 960px){
+  @media(max-width: 768px){
     width: 100%;
     height: 70px;
     display: flex;
@@ -109,14 +109,16 @@ export const MenuItemLink = styled.a`
   font-weight: 300;
   cursor: pointer;
   transition: 0.5s all ease;
+  text-decoration: none;
 
   &:hover{
-    color: black;
-    background-color: #66FCF1;
+    color: #66FCF1;
+    filter: drop-shadow(0 0 20px #66FCF1) drop-shadow(0 0 50px #66FCF1);
     transition: 0.5s all ease;
+    backdrop-filter: blur(10px);
   }
 
-  @media(max-width: 960px){
+  @media(max-width: 768px){
     width: 100%;
   }
 `;
@@ -125,15 +127,15 @@ export const Burger = styled.div`
   display: none;
   height: 100%;
 
-  @media(max-width: 960px){
+  @media(max-width: 768px){
     display: flex;
     align-items: center;
     cursor: pointer;
 
     svg{
       fill: #66FCF1;
-      margin-right: 0.5rem;
-      font-size: 2em;
+      margin-right: 1rem;
+      font-size: 3em;
     }
   }
 `
