@@ -23,7 +23,9 @@ export default Home;
 
 export const HomeContainer = styled.div`
   height: 100vh;
-  background-color: #0b0c10;
+  background-image: url(/src/assets/backgroundPicture.JPG);
+  background-size: cover;
+  background-position: center;
   z-index: -10;
   @media (max-width: 768px) {
     display: grid;

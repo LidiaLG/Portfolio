@@ -48,7 +48,7 @@ export const ContainerHeader = styled.div`
   position: fixed;
   width: 100%;
   height: 70px;
-  background-color: #0B0C10;
+  
 `;
 
 export const Wrapper = styled.div`
@@ -65,6 +65,7 @@ export const LogoContainer = styled.img`
   margin-left: 0.5rem;
   width: 130px;
   padding: 0.3rem;
+  z-index: 10;
 `;
 
 export const Menu = styled.ul`
@@ -76,10 +77,9 @@ export const Menu = styled.ul`
   @media(max-width: 768px){
     background-color: #0B0C10;
     position: absolute;
-    top: 70px;
     left: ${({open}) => (open ? "0" : "-100%")};
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -126,6 +126,7 @@ export const MenuItemLink = styled.a`
 export const Burger = styled.div`
   display: none;
   height: 100%;
+  z-index: 5;
 
   @media(max-width: 768px){
     display: flex;
