@@ -47,8 +47,9 @@ export default Header
 export const ContainerHeader = styled.div`
   position: fixed;
   width: 100%;
-  height: 70px;
-  
+  height: 80px;
+  background-color: #0B0C10;
+  z-index: 10;
 `;
 
 export const Wrapper = styled.div`

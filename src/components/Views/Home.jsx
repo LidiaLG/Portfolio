@@ -26,7 +26,9 @@ export const HomeContainer = styled.div`
   background-image: url(/src/assets/backgroundPicture.JPG);
   background-size: cover;
   background-position: center;
-  z-index: -10;
+  display: flex;
+  align-items: center;
+  
   @media (max-width: 768px) {
     display: grid;
     place-items: center;
@@ -39,8 +41,16 @@ export const Title = styled.div`
   width: 17.5rem;
   height: 18rem;
   padding: 1rem;
-  background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.48);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+
+  @media (min-width: 768px) {
+    margin-left: 10rem;
+  }
+  
   .presentationTitle {
     color: white;
     font-size: 2em;
