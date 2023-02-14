@@ -5,7 +5,7 @@ import memoramaPicture from '../../assets/memoramaPicture.jpg'
 const Proyectos = () => {
   return (
     <>
-      <Sections>
+      <Sections id='proyectos'>
         <h1>PROYECTOS</h1>
       </Sections>
       <ProyectosContainer>

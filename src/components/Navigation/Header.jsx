@@ -22,7 +22,7 @@ const Header = () => {
             </MenuItemLink>
           </MenuItem>
           <MenuItem>
-            <MenuItemLink href="/proyectos" onClick={() => setShowBurgerMenu(!showBurgerMenu)}>
+            <MenuItemLink href="#proyectos" onClick={() => setShowBurgerMenu(!showBurgerMenu)}>
               PROYECTOS
             </MenuItemLink>
           </MenuItem>
@@ -48,7 +48,7 @@ export const ContainerHeader = styled.div`
   position: fixed;
   width: 100%;
   height: 80px;
-  background-color: #0B0C10;
+  
   z-index: 10;
 `;
 
@@ -116,7 +116,7 @@ export const MenuItemLink = styled.a`
     color: #66FCF1;
     filter: drop-shadow(0 0 20px #66FCF1) drop-shadow(0 0 50px #66FCF1);
     transition: 0.5s all ease;
-    backdrop-filter: blur(10px);
+    
   }
 
   @media(max-width: 768px){
