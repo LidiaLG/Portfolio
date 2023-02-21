@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Home = () => {
   return (
     <>
-      <HomeContainer>
+      <HomeContainer id="home">
         <Title>
           <p className="presentationTitle">
             Hola,

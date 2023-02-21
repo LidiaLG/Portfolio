@@ -5,7 +5,7 @@ import styled from 'styled-components'
 const SobreMi = () => {
   return (
     <>
-      <Sections>
+      <Sections id="sobremi">
         <h1>SOBRE MI</h1>
       </Sections>
     <AboutMeContainer>

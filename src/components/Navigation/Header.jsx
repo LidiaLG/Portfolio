@@ -17,7 +17,7 @@ const Header = () => {
         </Burger>
         <Menu open={showBurgerMenu}>
           <MenuItem>
-            <MenuItemLink href="/home"onClick={() => setShowBurgerMenu(!showBurgerMenu)}>
+            <MenuItemLink href="#home"onClick={() => setShowBurgerMenu(!showBurgerMenu)}>
               HOME
             </MenuItemLink>
           </MenuItem>
@@ -27,7 +27,7 @@ const Header = () => {
             </MenuItemLink>
           </MenuItem>
           <MenuItem>
-            <MenuItemLink href="/sobremi" onClick={() => setShowBurgerMenu(!showBurgerMenu)}>
+            <MenuItemLink href="#sobremi" onClick={() => setShowBurgerMenu(!showBurgerMenu)}>
               SOBRE MI
             </MenuItemLink>
           </MenuItem>

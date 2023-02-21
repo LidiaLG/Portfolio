@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import memoramaPicture from '../../assets/memoramaPicture.jpg'
+import memoramaPicture from '../../assets/memoramaPicture.jpg';
+import ToDoListPicture from '../../assets/ToDoListPicture.jpg';
 
 const Proyectos = () => {
   return (
@@ -15,8 +16,8 @@ const Proyectos = () => {
               <h3>Juego memorama</h3>
               <img className='imgProjects' src={memoramaPicture} />
             <div className='btnContainer'>
-              <a className='btnProject' href="">Demo</a>
-              <a className='btnProject' href="">Repo</a>
+              <a className='btnProject' href="https://memorama-game-js.vercel.app/" target="_blank">Demo</a>
+              <a className='btnProject' href="https://github.com/LidiaLG/memorama_js" target="_blank">Repo</a>
             </div>
           </div>
         </div>
@@ -24,10 +25,10 @@ const Proyectos = () => {
           <div className='backgroundCard'>
             <div className='border'></div>
               <h3>Juego memorama</h3>
-              <img className='imgProjects' src={memoramaPicture} />
+              <img className='imgProjects' src={ToDoListPicture} />
             <div className='btnContainer'>
-              <a className='btnProject' href="">Demo</a>
-              <a className='btnProject' href="">Repo</a>
+              <a className='btnProject' href="https://todo-thingsjs.vercel.app/" target="_blank">Demo</a>
+              <a className='btnProject' href="https://github.com/LidiaLG/ToDoList_js" target="_blank">Repo</a>
             </div>
           </div>
         </div>
