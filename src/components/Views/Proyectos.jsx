@@ -1,8 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import memoramaPicture from '../../assets/memoramaPicture.jpg';
-import ToDoListPicture from '../../assets/ToDoListPicture.jpg';
-import TechEvents from '../../assets/TechEvents.png'
+import ToDoListPicture from '../../assets/ToDoListPicture.png';
+import TechEvents from '../../assets/TechEvents.png';
+import Gentis from '../../assets/Gentis-formacio.jpg'
+import { FaGithub, FaEye } from "react-icons/fa";
 
 const Proyectos = () => {
   return (
@@ -14,11 +16,36 @@ const Proyectos = () => {
         <div className='card'>
           <div className='backgroundCard'>
             <div className='border'></div>
+              <h3>Tech Events</h3>
+              <p>PHP | Laravel | Blade | Tailwind</p>
+              <img className='imgProjects' src={TechEvents} />
+            <div className='btnContainer'>
+              <a className='btnProject' href=""><FaEye /></a>
+              <a className='btnProject' href="https://github.com/LidiaLG/tech-events-manager-server" target="_blank"><FaGithub/></a>
+            </div>
+          </div>
+        </div>
+        <div className='card'>
+          <div className='backgroundCard'>
+            <div className='border'></div>
+              <h3>GentisFormació</h3>
+              <p>Reactjs | Material UI | Jest | PHP | Laravel</p>
+              <img className='imgProjects' src={Gentis} />
+            <div className='btnContainer'>
+              <a className='btnProject' href=""><FaEye /></a>
+              <a className='btnProject' href="https://github.com/orgs/Gentis-Team/repositories" target="_blank"><FaGithub/></a>
+            </div>
+          </div>
+        </div>
+        <div className='card'>
+          <div className='backgroundCard'>
+            <div className='border'></div>
               <h3>Juego memorama</h3>
+              <p>HTML | CSS | JavaScript</p>
               <img className='imgProjects' src={memoramaPicture} />
             <div className='btnContainer'>
-              <a className='btnProject' href="https://memorama-game-js.vercel.app/" target="_blank">Demo</a>
-              <a className='btnProject' href="https://github.com/LidiaLG/memorama_js" target="_blank">Repo</a>
+              <a className='btnProject' href="https://memorama-game-js.vercel.app/" target="_blank"><FaEye /></a>
+              <a className='btnProject' href="https://github.com/LidiaLG/memorama_js" target="_blank"><FaGithub/></a>
             </div>
           </div>
         </div>
@@ -26,32 +53,11 @@ const Proyectos = () => {
           <div className='backgroundCard'>
             <div className='border'></div>
               <h3>To Do List</h3>
+              <p>HTML | CSS | JavaScript</p>
               <img className='imgProjects' src={ToDoListPicture} />
             <div className='btnContainer'>
-              <a className='btnProject' href="https://todo-thingsjs.vercel.app/" target="_blank">Demo</a>
-              <a className='btnProject' href="https://github.com/LidiaLG/ToDoList_js" target="_blank">Repo</a>
-            </div>
-          </div>
-        </div>
-        <div className='card'>
-          <div className='backgroundCard'>
-            <div className='border'></div>
-              <h3>Tech Events</h3>
-              <img className='imgProjects' src={TechEvents} />
-            <div className='btnContainer'>
-              <a className='btnProject' href="">Demo</a>
-              <a className='btnProject' href="">Repo</a>
-            </div>
-          </div>
-        </div>
-        <div className='card'>
-          <div className='backgroundCard'>
-            <div className='border'></div>
-              <h3>Juego memorama</h3>
-              <img className='imgProjects' src={memoramaPicture} />
-            <div className='btnContainer'>
-              <a className='btnProject' href="">Demo</a>
-              <a className='btnProject' href="">Repo</a>
+              <a className='btnProject' href="https://todo-thingsjs.vercel.app/" target="_blank"><FaEye /></a>
+              <a className='btnProject' href="https://github.com/LidiaLG/ToDoList_js" target="_blank"><FaGithub/></a>
             </div>
           </div>
         </div>
@@ -77,6 +83,14 @@ export const ProyectosContainer = styled.div`
     
   }
 
+  p{
+    margin-bottom: 1em;
+  }
+
+  svg{
+    font-size: 1.5em;
+  }
+
   .card{
     width: 400px;
     display: flex;
@@ -87,7 +101,7 @@ export const ProyectosContainer = styled.div`
     .backgroundCard{
       max-width: 300px;
       color: #fff;
-      padding: 150px 0px 50px 40px;
+      padding: 50px 0px 50px 40px;
       background: rgba(102, 252, 241, 0.48);
       border-radius: 10px;
       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -114,7 +128,8 @@ export const ProyectosContainer = styled.div`
       color: #0B0C10;
       background-color: #66FCF1;
       width: 80px;
-      text-align: center;
+      display: flex;
+      justify-content: center;
       padding: 6px;
       border-radius: 10px;
       cursor: pointer;

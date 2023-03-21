@@ -11,7 +11,7 @@ const Contacto = () => {
       </Sections>
       <ContactContainer>
         <ContainerMedia>
-          <h1>Contacta-me:</h1>
+          <h1>Contactame:</h1>
           <ContactMedias>
             <a href="https://github.com/LidiaLG" className='linksMedias' target="_blank" rel="noopener noreferrer"><FaGithub className='icons'/></a>
             <a href="https://www.linkedin.com/in/lidialg/" className='linksMedias' target="_blank" rel="noopener noreferrer"><FaLinkedinIn className='icons'/></a>
