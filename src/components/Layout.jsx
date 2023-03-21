@@ -2,6 +2,7 @@ import React from 'react'
 import Home from './Views/Home'
 import Proyectos from './Views/Proyectos'
 import SobreMi from './Views/SobreMi'
+import Contacto from './Views/Contacto'
 
 
 const Layout = () => {
@@ -10,6 +11,7 @@ const Layout = () => {
       <Home/>
       <Proyectos/>
       <SobreMi/>
+      <Contacto/>
     </div>
   )
 }

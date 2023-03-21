@@ -39,7 +39,6 @@ export const Title = styled.div`
   display: flex;
   flex-direction: column;
   width: 17.5rem;
-  height: 18rem;
   padding: 1rem;
   background: rgba(255, 255, 255, 0.48);
   border-radius: 16px;
@@ -48,7 +47,10 @@ export const Title = styled.div`
   -webkit-backdrop-filter: blur(7.7px);
 
   @media (min-width: 768px) {
+    width: 27rem;
     margin-left: 10rem;
+    font-size: 1.5em;
+    
   }
   
   .presentationTitle {

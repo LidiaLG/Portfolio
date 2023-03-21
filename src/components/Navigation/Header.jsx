@@ -32,7 +32,7 @@ const Header = () => {
             </MenuItemLink>
           </MenuItem>
           <MenuItem>
-            <MenuItemLink href="/contacto" onClick={() => setShowBurgerMenu(!showBurgerMenu)}>
+            <MenuItemLink href="#contacto" onClick={() => setShowBurgerMenu(!showBurgerMenu)}>
               CONTACTO
             </MenuItemLink>
           </MenuItem>

@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import memoramaPicture from '../../assets/memoramaPicture.jpg';
 import ToDoListPicture from '../../assets/ToDoListPicture.jpg';
+import TechEvents from '../../assets/TechEvents.png'
 
 const Proyectos = () => {
   return (
@@ -24,7 +25,7 @@ const Proyectos = () => {
         <div className='card'>
           <div className='backgroundCard'>
             <div className='border'></div>
-              <h3>Juego memorama</h3>
+              <h3>To Do List</h3>
               <img className='imgProjects' src={ToDoListPicture} />
             <div className='btnContainer'>
               <a className='btnProject' href="https://todo-thingsjs.vercel.app/" target="_blank">Demo</a>
@@ -35,8 +36,8 @@ const Proyectos = () => {
         <div className='card'>
           <div className='backgroundCard'>
             <div className='border'></div>
-              <h3>Juego memorama</h3>
-              <img className='imgProjects' src={memoramaPicture} />
+              <h3>Tech Events</h3>
+              <img className='imgProjects' src={TechEvents} />
             <div className='btnContainer'>
               <a className='btnProject' href="">Demo</a>
               <a className='btnProject' href="">Repo</a>
