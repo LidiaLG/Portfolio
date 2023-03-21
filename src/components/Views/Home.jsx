@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Home = () => {
   return (
     <>
-      <HomeContainer id="home">
+      <HomeContainer id="home" style={{backgroundImage: `url(/src/assets/backgroundPicture.jpg)`}}>
         <Title>
           <p className="presentationTitle">
             Hola,
@@ -23,7 +23,6 @@ export default Home;
 
 export const HomeContainer = styled.div`
   height: 100vh;
-  background-image: url(/src/assets/backgroundPicture.png) !important;
   background-size: cover;
   background-position: center;
   display: flex;
