@@ -23,7 +23,7 @@ export default Home;
 
 export const HomeContainer = styled.div`
   height: 100vh;
-  background-image: url('/src/assets/backgroundPicture.jpg');
+  background-image: url('/public/backgroundPicture.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
