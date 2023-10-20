@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import memoramaPicture from '../../assets/memoramaPicture.jpg';
 import ToDoListPicture from '../../assets/ToDoListPicture.png';
 import TechEvents from '../../assets/TechEvents.png';
 import Gentis from '../../assets/Gentis-formacio.jpg'
-import { FaGithub, FaEye } from "react-icons/fa";
+import { FaGithub, FaEye } from 'react-icons/fa';
+import data from '../data/data';
 
 const Proyectos = () => {
+  const allFilters = ['All', ...new Set(data.map(projects => projects.type))]
+  
+  // const [types, setTypes] = useState(allTypes)
+  // const [projects, setProjects] = useState(data)
+
   return (
     <>
       <Sections id='proyectos'>
@@ -77,10 +83,21 @@ export const ProyectosContainer = styled.div`
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    padding-right: 1em;
+
+    @media (max-width: 400px){
+      .backgroundCard{
+        width: 250px;
+      }
+      .imgProjects{
+        width: 5px;
+        height: 6px;
+        border: 2px solid white;
+      }
+    }
 
   h3{
     text-transform: uppercase;
-    
   }
 
   p{
