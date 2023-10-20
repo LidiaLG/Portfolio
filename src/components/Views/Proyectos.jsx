@@ -5,10 +5,10 @@ import ToDoListPicture from '../../assets/ToDoListPicture.png';
 import TechEvents from '../../assets/TechEvents.png';
 import Gentis from '../../assets/Gentis-formacio.jpg'
 import { FaGithub, FaEye } from 'react-icons/fa';
-import data from '../data/data';
+// import data from '../data/data';
 
 const Proyectos = () => {
-  const allFilters = ['All', ...new Set(data.map(projects => projects.type))]
+  // const allFilters = ['All', ...new Set(data.map(projects => projects.type))]
   
   // const [types, setTypes] = useState(allTypes)
   // const [projects, setProjects] = useState(data)

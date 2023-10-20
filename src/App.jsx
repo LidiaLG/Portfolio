@@ -1,6 +1,5 @@
 import './App.css';
 import Router from './Route/Router';
-import Medias from "./components/Navigation/Medias";
 import Header from './components/Navigation/Header';
 
 function App() {
@@ -9,7 +8,6 @@ function App() {
       <Header/>
       <Router>
       </Router>
-      <Medias/>
     </>
   );
 }
