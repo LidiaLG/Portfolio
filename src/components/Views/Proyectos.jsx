@@ -6,6 +6,7 @@ import TechEvents from '../../assets/TechEvents.png';
 import Gentis from '../../assets/Gentis-formacio.jpg'
 import { FaGithub, FaEye } from 'react-icons/fa';
 import data from '../data/data';
+import Pokedex from '../../assets/pokedexPicture.png'
 
 const Proyectos = () => {
   const allFilters = ['All', ...new Set(data.map(projects => projects.type))]
@@ -61,6 +62,18 @@ const Proyectos = () => {
               <h3>To Do List</h3>
               <p>HTML | CSS | JavaScript</p>
               <img className='imgProjects' src={ToDoListPicture} />
+            <div className='btnContainer'>
+              <a className='btnProject' href="https://todo-thingsjs.vercel.app/" target="_blank"><FaEye /></a>
+              <a className='btnProject' href="https://github.com/LidiaLG/ToDoList_js" target="_blank"><FaGithub/></a>
+            </div>
+          </div>
+        </div>
+        <div className='card'>
+          <div className='backgroundCard'>
+            <div className='border'></div>
+              <h3>Pokedex-PokeApi</h3>
+              <p>HTML | CSS | JavaScript</p>
+              <img className='imgProjects' src={Pokedex} />
             <div className='btnContainer'>
               <a className='btnProject' href="https://todo-thingsjs.vercel.app/" target="_blank"><FaEye /></a>
               <a className='btnProject' href="https://github.com/LidiaLG/ToDoList_js" target="_blank"><FaGithub/></a>
@@ -132,6 +145,7 @@ export const ProyectosContainer = styled.div`
     width: 20rem;
     height: 15rem;
     border: 4px solid white;
+    object-fit: fill;
   }
 
   .btnContainer{
