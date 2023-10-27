@@ -29,6 +29,11 @@ const Header = () => {
   }, []);
   const isMobileView = window.innerWidth <= 768;
 
+  //estilo links navbar
+  const [activeLink, setActiveLink] = useState("Proyectos");
+
+
+
   return (
     <ContainerHeader>
       <Wrapper>
@@ -38,13 +43,24 @@ const Header = () => {
         </Burger>
         
         <Menu open={showBurgerMenu}>
-          <MenuItem>
-            <MenuItemLink href="#proyectos" onClick={() => setShowBurgerMenu(!showBurgerMenu)}>
+          <MenuItem className={activeLink === "Proyectos" ? "active" : ""}>
+            <MenuItemLink 
+              href="#proyectos" 
+              onClick={() => {
+                setShowBurgerMenu(!showBurgerMenu);
+                setActiveLink("Proyectos");
+            }}>
               PROYECTOS
             </MenuItemLink>
           </MenuItem>
-          <MenuItem>
-            <MenuItemLink href="#sobremi" onClick={() => setShowBurgerMenu(!showBurgerMenu)}>
+          <MenuItem className={activeLink === "SobreMi" ? "active" : ""}>
+            <MenuItemLink 
+              href="#sobremi"
+              onClick={() => {
+                setShowBurgerMenu(!showBurgerMenu);
+                setActiveLink("SobreMi");
+              }}
+            >
               SOBRE MI
             </MenuItemLink>
           </MenuItem>
@@ -79,6 +95,7 @@ export const Wrapper = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   margin: auto;
+  position: relative;
 `;
 
 export const LogoContainer = styled.img`
@@ -89,11 +106,16 @@ export const LogoContainer = styled.img`
 `;
 
 export const Menu = styled.ul`
-  height: 100%;
+  height: 50%;
   display: flex;
   justify-content: center;
+  margin-top: 1.2rem;
   list-style: none;
-  background-color: red;
+  background-color: rgba(242, 242, 242, .05);
+  border-radius: 100vmax;
+  border: 1px solid rgba(242, 242, 242, .1);
+  backdrop-filter: blur(15px);
+
 
   @media(max-width: 768px){
     background-color: #0B0C10;
@@ -101,21 +123,33 @@ export const Menu = styled.ul`
     left: ${({open}) => (open ? "0" : "-100%")};
     width: 100%;
     height: 100vh;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     align-items: center;
     transition: 0.5s all ease;
+    border-radius: 0;
+    margin-top: 0;
   }
 `;
 
 export const MenuItem = styled.li`
   height: 100%;
+
+  &.active {
+    background-color: rgba(242, 242, 242, .05);
+    border-radius: 100vmax;
+  }
+  
   @media(max-width: 768px){
     width: 100%;
     height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &:nth-child(1) {
+      margin-top: 5rem;
+    }
   }
 `;
 
@@ -131,6 +165,7 @@ export const MenuItemLink = styled.a`
   cursor: pointer;
   transition: 0.5s all ease;
   text-decoration: none;
+  
 
   &:hover{
     color: #66FCF1;

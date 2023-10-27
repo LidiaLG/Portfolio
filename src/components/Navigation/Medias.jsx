@@ -71,6 +71,9 @@ export const MediaContainer = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 15px;
+        opacity: 0;
+        visibility: hidden;
     }
 
     .medias .linksMedias:hover{
@@ -79,12 +82,7 @@ export const MediaContainer = styled.div`
         box-shadow: 0px 1px 10px rgba(248, 247, 247, 0.4);
     }
 
-    .medias .linksMedias{
-        margin-bottom: -16px;
-        margin-top: 15px;
-        opacity: 0;
-        visibility: hidden;
-    }
+   
 
     #btnPlus:checked~ .medias .linksMedias{
         margin-bottom: 10px;
@@ -95,12 +93,14 @@ export const MediaContainer = styled.div`
     
 
 @media (max-width: 768px){
-        left: 15px;
-        
+    margin-top: 10rem;
+    margin: auto;
+  
     .btnPlus{
         width: 40px;
         height: 40px;
     }
+
 }
 
     @media(min-width: 768px){
