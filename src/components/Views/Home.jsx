@@ -47,9 +47,10 @@ export const Title = styled.div`
   -webkit-backdrop-filter: blur(7.7px);
 
   @media (min-width: 768px) {
-    width: 27rem;
-    margin-left: 10rem;
-    font-size: 1.5em;
+    width: 23rem;
+    height: 50%;
+    margin-left: 2rem;
+    font-size: 1em;
     
   }
   
@@ -84,7 +85,7 @@ export const Title = styled.div`
 
     70%,
     90% {
-      width: 100%;
+      width: 75%;
     }
   }
 `;
