@@ -6,15 +6,16 @@ const Medias = () => {
     return (
         <MediaContainer>
             <input type="checkbox" id="btnPlus"></input>
+            <div className='btnPlus'>
+                <label className="containerBtnPlus" for="btnPlus"><FaPlus className='iconPlus'/></label>
+            </div>
             <div className='medias'>
                 <a href="https://github.com/LidiaLG" className='linksMedias' target="_blank" rel="noopener noreferrer"><FaGithub className='icons'/></a>
                 <a href="https://www.linkedin.com/in/lidialg/" className='linksMedias' target="_blank" rel="noopener noreferrer"><FaLinkedinIn className='icons'/></a>
                 <a href="mailto:lidialg.dev@gmail.com" className='linksMedias' target="_blank" rel="noopener noreferrer"><FaEnvelope className='icons'/></a>
                 <a href="./CVFullStackdeveloper.pdf" className='linksMedias' rel="noopener noreferrer" download="CVFullStackLidia"><FaDownload className='icons'/></a>
             </div>
-            <div className='btnPlus'>
-                <label className="containerBtnPlus" for="btnPlus"><FaPlus className='iconPlus'/></label>
-            </div>
+            
         </MediaContainer>
     )
 }
@@ -22,11 +23,9 @@ const Medias = () => {
 export default Medias
 
 export const MediaContainer = styled.div`
-    position: fixed;
     width: 50px;
-    bottom: 20px;
-    right: 20px;
-    z-index: 10;
+    padding: 10px;
+    margin-right: 3.5rem;
 
     #btnPlus{
     display: none;
@@ -72,6 +71,9 @@ export const MediaContainer = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 15px;
+        opacity: 0;
+        visibility: hidden;
     }
 
     .medias .linksMedias:hover{
@@ -80,11 +82,7 @@ export const MediaContainer = styled.div`
         box-shadow: 0px 1px 10px rgba(248, 247, 247, 0.4);
     }
 
-    .medias .linksMedias{
-        margin-bottom: -16px;
-        opacity: 0;
-        visibility: hidden;
-    }
+   
 
     #btnPlus:checked~ .medias .linksMedias{
         margin-bottom: 10px;
@@ -92,15 +90,21 @@ export const MediaContainer = styled.div`
         visibility: visible;
     }
 
+    
+
 @media (max-width: 768px){
-        left: 15px;
+    margin-top: 10rem;
+    margin: auto;
+  
     .btnPlus{
         width: 40px;
         height: 40px;
     }
+
 }
 
     @media(min-width: 768px){
+        
         .linksMedias{
             width: 55px;
             height: 55px;

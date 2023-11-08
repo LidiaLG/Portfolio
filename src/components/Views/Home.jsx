@@ -7,8 +7,7 @@ const Home = () => {
       <HomeContainer id="home">
         <Title>
           <p className="presentationTitle">
-            Hola,
-            <br /> soy Lidia
+            Hola, soy Lidia
           </p>
           <span className="animationTitle" data-text="FullStack Developer">
             FullStack Developer
@@ -23,7 +22,7 @@ export default Home;
 
 export const HomeContainer = styled.div`
   height: 100vh;
-  background-image: url('/background_picture.jpg');
+  background-image: url('/background_picture2.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -32,6 +31,7 @@ export const HomeContainer = styled.div`
   @media (max-width: 768px) {
     display: grid;
     place-items: center;
+    background-position: right;
   }
 `;
 
@@ -47,9 +47,10 @@ export const Title = styled.div`
   -webkit-backdrop-filter: blur(7.7px);
 
   @media (min-width: 768px) {
-    width: 27rem;
-    margin-left: 10rem;
-    font-size: 1.5em;
+    width: 23rem;
+    
+    margin-left: 2rem;
+    font-size: 1em;
     
   }
   
@@ -84,7 +85,7 @@ export const Title = styled.div`
 
     70%,
     90% {
-      width: 100%;
+      width: 75%;
     }
   }
 `;
