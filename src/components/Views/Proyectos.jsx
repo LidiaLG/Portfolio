@@ -90,6 +90,10 @@ export const ProyectosContainer = styled.div`
     );
     gap: 1em;
     padding: 2em;
+
+    @media(max-width: 560px){
+      justify-items: center;
+    }
 `;
 
 export const Card = styled.div `
@@ -112,6 +116,7 @@ export const Card = styled.div `
     .titleProjects, .paraphProjects{
       text-transform: uppercase;
       margin-top: 1em;
+      height: 2rem;
     }
 
     svg{

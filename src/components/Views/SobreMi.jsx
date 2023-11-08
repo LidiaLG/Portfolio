@@ -1,5 +1,7 @@
 import React from 'react';
-import aboutMePicture from '../../assets/aboutMePicture.jpg';
+import aboutMePicture from '../../assets/photo-profile.jpg';
+import gallery5 from '../../assets/gallery5.jpg'
+import gallery4 from '../../assets/gallery4.jpg'
 import styled from 'styled-components'
 
 const SobreMi = () => {
@@ -9,11 +11,28 @@ const SobreMi = () => {
         <h1>SOBRE MI</h1>
       </Sections>
     <AboutMeContainer>
-      <div className='containerImgandText'>
-        <img className = "picture" src={aboutMePicture} alt='img'></img>
-        <p>Soy Full-Stack developer, durante mis estudios y trabajos he adquirido habilidades de planificación, resolución de conflictos y trabajo en equipo con metodología Agile.
-        Apasionada del arte y de crear algo desde 0.
-        Hice un voluntariado de tres meses en Ecuador donde me reencontré y me propuse crecen en todos los ámbitos. </p>
+      <div className="infoContainer">
+        <p className="title"> Soy una apasionada de crear cosas que puedan ser útiles y bonitas.</p>
+        <div className="imgTextContainer">
+          <div className="infoItem">
+            <img src={aboutMePicture} alt="picture about me" />
+          </div>
+          <div className="infoItem">
+            <p>Desde siempre me ha gustado el arte en sus múltiples facetas como pintar, dibujar, escribir, hacer fotografías...</p>
+          </div>
+          <div className="infoItem">
+            <p>He descubierto el mundo de la programación. Y es un mundo fascinante en el que tienes libertad de crear lo que quieras, el fin está en tu conocimiento e imaginación. En el camino del apendizaje de los diferentes lenguajes de programación y herramientas he aprendido de mí, que soy una persona resiliente. Me gusta trabajar en equipo y aprender de cada persona y, sobretodo, descubrirme a mí misma.</p>
+          </div>
+          <div className="infoItem">
+            <img src={gallery4} alt="picture nature" />
+          </div>
+          <div className="infoItemFull">
+            <img src={gallery5} alt="picture graffity" />
+          </div>
+          <div className="infoItemFull">
+            <p>En mi tiempo libre me gusta pasar tiempo en la naturaleza, sobretodo cerca del mar. Soy fan de descubrir una buena película, serie o libro, y sobretodo compartir estos momentos con la familia y amigos..</p>
+          </div>
+        </div>
       </div>
     </AboutMeContainer>
     </>
@@ -23,42 +42,69 @@ const SobreMi = () => {
 export default SobreMi
 
 export const AboutMeContainer = styled.div`
-    background: #0B0C10;
+    background: #0b0c10;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+
+    .infoContainer {
+      max-width: 700px;
+      margin: 0 auto;
+      margin-bottom: 2em;
+    }
+
+    .title {
+      margin-bottom: 2rem;
+      color: #fff;
+      text-align: left;
+    }
+
+.imgTextContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 1em;
+  align-items: center;
+  justify-content: center;
+
+  .infoItem {
+    text-align: center;
+    
+  }
+
+  .infoItemFull {
+    grid-column: span 2;
+  }
+
+  img {
     width: 100%;
-    height: 100vh;
-    display: grid;
-    place-items: center;
-
-    .containerImgandText{
-    width: 70%;
-    height: 70%;
-    margin: auto;
-    margin-top: -20px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: solid 3px #66FCF1;
-    border-radius: 10px;
-  }
-
-  .picture{
-      width: 12rem;
-      border-radius: 10px;   
-      margin-bottom: 2rem; 
-      margin-top: 2rem;
-  }
-
-  p{
-      width: 80%;
-      font-size: 18px;
+    max-width: 100%;
+    height: auto;
   }
 
   @media screen and (max-width: 768px) {
-      p{
-          font-size: 13px;
-      }
+    .imgTextContainer {
+      display: block;
+    }
+
+    .infoItemFull {
+      grid-column: span 1;
+    }
   }
+
+  @media screen and (max-width: 480px) {
+    .infoContainer{
+      max-width: 50%;
+    }
+    img {
+      width: 80%;
+    }
+
+    p {
+      font-size: .9em;
+      text-align: center;
+    }
+  }
+}
 `;
 
 export const Sections = styled.div`
