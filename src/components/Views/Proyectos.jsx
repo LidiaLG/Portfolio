@@ -84,12 +84,13 @@ export const ProyectosContainer = styled.div`
     grid-template-columns: repeat(
       auto-fit,
       minmax(
-        15em,
+        18em,
         1fr
       )
     );
     gap: 1em;
     padding: 2em;
+    justify-items: center;
 
     @media(max-width: 560px){
       justify-items: center;
@@ -98,6 +99,7 @@ export const ProyectosContainer = styled.div`
 
 export const Card = styled.div `
     max-width: 20em;
+    width: 17rem;
     padding: 1rem;
     color: #fff;
     background: rgba(102, 252, 241, 0.48);

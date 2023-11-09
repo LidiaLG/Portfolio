@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "imgUrl": "https://i.postimg.cc/44QJzCgp/Gentis-formacio.jpg",
+        "imgUrl": "https://i.postimg.cc/Pq1SW5bj/gentis-formacio.jpg",
         "type": "FullStack",
         "name": "Gentis-Formació",
         "skills": "Reactjs | Material UI | Jest | PHP | Laravel",
@@ -10,7 +10,7 @@
     },
     {
         "id": 2,
-        "imgUrl": "https://i.postimg.cc/13JN2V0H/Tech-Events.png",
+        "imgUrl": "https://i.postimg.cc/3J7YmkgK/tech-events.jpg",
         "type": "Backend",
         "name": "Tech-Events",
         "skills": "PHP | Laravel | Blade | Tailwind",
@@ -19,7 +19,7 @@
     },
     {
         "id": 3,
-        "imgUrl": "https://i.postimg.cc/tRKMCJf5/memorama-Picture.jpg",
+        "imgUrl": "https://i.postimg.cc/L81RLjn0/memorama-picture.jpg",
         "type": "Game",
         "name": "Memorama",
         "skills": "HTML | CSS | JavaScript",
@@ -28,7 +28,7 @@
     },
     {
         "id": 4,
-        "imgUrl": "https://i.postimg.cc/vTwpTGHM/To-Do-List-Picture.png",
+        "imgUrl": "https://i.postimg.cc/pTw8qfPc/todo-list.jpg",
         "type": "Frontend",
         "name": "To Do List",
         "skills": "HTML | CSS | JavaScript",
@@ -37,7 +37,7 @@
     },
     {
         "id": 5,
-        "imgUrl": "https://i.postimg.cc/KjbHFQJ8/screenshot-app.png",
+        "imgUrl": "https://i.postimg.cc/kGkvkrqC/pokedex.jpg",
         "type": "Frontend",
         "name": "Pokedex",
         "skills": "HTML | CSS | JavaScript",
