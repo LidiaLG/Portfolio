@@ -42,6 +42,15 @@
         "name": "Pokedex",
         "skills": "HTML | CSS | JavaScript",
         "demo": "https://pokedexapp-nu.vercel.app",
-        "repo": "https://pokedexapp-nu.vercel.app"
+        "repo": "https://github.com/LidiaLG/netflix-clone"
+    },
+    {
+        "id": 6,
+        "imgUrl": "https://i.postimg.cc/RhF989QX/netflix-clone.jpg",
+        "type": "Frontend",
+        "name": "Netflix-Clone",
+        "skills": "HTML | CSS | JavaScript",
+        "demo": "https://netflix-clone-vitejs.vercel.app",
+        "repo": "https://github.com/LidiaLG/netflix-clone"
     }
 ]
