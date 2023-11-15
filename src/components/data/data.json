@@ -19,21 +19,21 @@
     },
     {
         "id": 3,
-        "imgUrl": "https://i.postimg.cc/L81RLjn0/memorama-picture.jpg",
-        "type": "Game",
-        "name": "Memorama",
+        "imgUrl": "https://i.postimg.cc/RhF989QX/netflix-clone.jpg",
+        "type": "Frontend",
+        "name": "Netflix-Clone",
         "skills": "HTML | CSS | JavaScript",
-        "demo": "https://memorama-game-js.vercel.app/",
-        "repo": "https://github.com/LidiaLG/memorama_js"
+        "demo": "https://netflix-clone-vitejs.vercel.app",
+        "repo": "https://github.com/LidiaLG/netflix-clone"
     },
     {
         "id": 4,
         "imgUrl": "https://i.postimg.cc/pTw8qfPc/todo-list.jpg",
         "type": "Frontend",
-        "name": "To Do List",
-        "skills": "HTML | CSS | JavaScript",
-        "demo": "https://todo-thingsjs.vercel.app/",
-        "repo": "https://github.com/LidiaLG/ToDoList_js"
+        "name": "Monique-LandingPage",
+        "skills": "HTML | CSS | JavaScript | Bootstrap",
+        "demo": "https://monique-landingpage.vercel.app",
+        "repo": "https://github.com/LidiaLG/monique-test"
     },
     {
         "id": 5,
@@ -46,11 +46,11 @@
     },
     {
         "id": 6,
-        "imgUrl": "https://i.postimg.cc/RhF989QX/netflix-clone.jpg",
+        "imgUrl": "https://i.postimg.cc/L81RLjn0/memorama-picture.jpg",
         "type": "Frontend",
-        "name": "Netflix-Clone",
+        "name": "Memorama",
         "skills": "HTML | CSS | JavaScript",
-        "demo": "https://netflix-clone-vitejs.vercel.app",
-        "repo": "https://github.com/LidiaLG/netflix-clone"
+        "demo": "https://memorama-game-js.vercel.app/",
+        "repo": "https://github.com/LidiaLG/memorama_js"
     }
 ]
