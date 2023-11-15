@@ -30,7 +30,7 @@ const SobreMi = () => {
             <img src={gallery5} alt="picture graffity" />
           </div>
           <div className="infoItemFull">
-            <p>En mi tiempo libre me gusta estar en la naturaleza, sobretodo cerca del mar. Soy fan de descubrir una buena película, serie o libro, y sobretodo compartir estos momentos con la familia y amig@s...</p>
+            <p>En mi tiempo libre me gusta estar en la naturaleza, sobretodo cerca del mar. Soy fan de descubrir una buena película, serie o libro, y sobretodo compartir estos momentos con la familia y amig@s.</p>
           </div>
         </div>
       </div>
