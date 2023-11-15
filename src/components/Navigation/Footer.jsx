@@ -47,7 +47,7 @@ export const FooterContainer = styled.div`
 
     .boxYoda{
       position: absolute;
-      margin-bottom: 5rem;
+      margin-bottom: 2.5rem;
       margin-left: 7rem;
     }
 
