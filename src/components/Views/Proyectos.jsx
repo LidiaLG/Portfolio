@@ -37,7 +37,7 @@ const Proyectos = () => {
             <h3 className='titleProjects'>{project.name}</h3>
             <p className='paraphProjects'>{project.skills}</p>
             <div className='btnContainer'>
-              <a className='btnProject' href={project.demo}><FaEye /></a>
+              <a className='btnProject' href={project.demo} target="_blank"><FaEye /></a>
               <a className='btnProject' href={project.repo} target="_blank"><FaGithub/></a>
             </div>
           </Card>
