@@ -13,7 +13,7 @@ const Medias = () => {
                 <a href="https://github.com/LidiaLG" className='linksMedias' target="_blank" rel="noopener noreferrer"><FaGithub className='icons'/></a>
                 <a href="https://www.linkedin.com/in/lidialg/" className='linksMedias' target="_blank" rel="noopener noreferrer"><FaLinkedinIn className='icons'/></a>
                 <a href="mailto:lidialg.dev@gmail.com" className='linksMedias' target="_blank" rel="noopener noreferrer"><FaEnvelope className='icons'/></a>
-                <a href="./CVFullStackdeveloper.pdf" className='linksMedias' rel="noopener noreferrer" download="CVFullStackLidia"><FaDownload className='icons'/></a>
+                <a href="./CVFrontend.pdf" className='linksMedias' rel="noopener noreferrer" download="CVFrontendLidia"><FaDownload className='icons'/></a>
             </div>
             
         </MediaContainer>
